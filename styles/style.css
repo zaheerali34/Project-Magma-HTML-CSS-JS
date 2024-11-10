@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: font3;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "font1";
+  src: url(/font/1.woff2);
+}
+
+@font-face {
+  font-family: "font2";
+  src: url(/font/2.woff2);
+}
+
+@font-face {
+  font-family: "font3";
+  src: url(/font/3.woff2);
+}
+
+#main {
+  background-color: #0842e0;
+}
+
+body::selection {
+  background-color: white;
+  color: #0842e0;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  position: relative;
+  z-index: 9;
+}
+
+.logo img {
+  width: 4rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+}
+
+#menu {
+  position: fixed;
+  top: 2.3rem;
+  right: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 1px solid #989898;
+  border-radius: 3rem;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: #0842e0;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+.button i {
+  font-size: 1rem;
+  color: rgb(207, 207, 207);
+  border: 1px solid #989898;
+  padding: 0.8rem 1.8rem;
+  border-radius: 3rem;
+  transition: all 0.3s;
+}
+
+.button i:hover {
+  border: 1px solid #ffffff;
+}
+
+/* menu Bar */
+.menu_bar {
+  width: 100%;
+  height: 100vh;
+  background-color: #0842e096;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.menu_bar.showMenu {
+    opacity: 1;
+}
+
+.menu_bar .box {
+  width: 40%;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  right: -100%;
+  opacity: 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding: 4rem;
+  flex-direction: column;
+}
+
+.menu_bar.showMenu .box {
+  right: 0;
+  opacity: 1;
+}
+
+.box ul li {
+  list-style: none;
+  font-size: 4.2rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.box ul li:hover {
+  color: #0842e0;
+}
+
+.box .social_media {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 4rem;
+}
+
+.btn_hover {
+  font-size: 15px;
+  color: #1e1d1d;
+  font-family: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.btn_hover:focus,
+.btn_hover:hover {
+  color: #000000;
+}
+
+.btn_hover:focus:after,
+.btn_hover:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.btn_hover:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 0.5px;
+  background-color: #1f1f1f;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.social_media .btn_hover {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(54, 53, 53);
+}
+
+/* home_pages */
+.home_pages {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texthome {
+  position: absolute;
+  top: 50%;
+  padding: 0 10rem;
+}
+
+.texthome h1 {
+  width: 70%;
+  font-size: 6.5rem;
+  font-weight: 300;
+  color: white;
+  line-height: 100px;
+}
+
+.texthome .text {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.texthome .text p {
+  font-size: 1.3rem;
+  color: rgb(225, 224, 224);
+  width: 40%;
+}
+
+/* section_Two */

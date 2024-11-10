@@ -1,0 +1,70 @@
+@media screen and (max-width: 990px) {
+  .texthome {
+    padding: 0 6rem;
+  }
+
+  .texthome h1 {
+    width: 60%;
+    font-size: 4rem;
+    line-height: 60px;
+  }
+
+  .texthome .text p {
+    font-size: 1rem;
+    color: rgb(225, 224, 224);
+    width: 60%;
+  }
+
+  .menu_bar .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .texthome {
+    position: absolute;
+    padding: 0 1.5rem;
+  }
+
+  .texthome h1 {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header .btn {
+    display: none;
+  }
+
+  #menu {
+    position: fixed;
+    top: 2.3rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .texthome h1 {
+    font-size: 3rem;
+  }
+
+  .texthome .text p {
+    width: 100%;
+  }
+
+  .texthome .text {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .menu_bar .box {
+    padding: 6rem 2rem;
+  }
+
+  .box ul li {
+    font-size: 3rem;
+  }
+}
