@@ -26,51 +26,15 @@ body {
   src: url(/font/3.woff2);
 }
 
-#main {
-  background-color: #0842e0;
-}
-
-body::selection {
-  background-color: white;
-  color: #0842e0;
-}
-
-/* Header */
-.header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 4rem;
-  position: relative;
-  z-index: 9;
-}
-
-.logo img {
-  width: 4rem;
-}
-
-.button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-right: 100px;
-}
-
-#menu {
-  position: fixed;
-  top: 2.3rem;
-  right: 4rem;
-}
-
+/* From Uiverse.io by WhiteNervosa */ 
+/* From Uiverse.io by ernestnash */ 
 .btn {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   border: 1px solid #989898;
-  border-radius: 3rem;
   cursor: pointer;
   position: relative;
   background-color: transparent;
@@ -78,14 +42,10 @@ body::selection {
   overflow: hidden;
   z-index: 1;
   font-family: inherit;
-  font-weight: 400;
-}
-
-.btn:hover {
-  color: #0842e0;
-}
-
-.btn::before {
+  border-radius: 2rem;
+ }
+ 
+ .btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -94,12 +54,64 @@ body::selection {
   height: 100%;
   background-color: white;
   transform: translateX(-100%);
-  transition: all 0.3s;
+  transition: all .3s;
   z-index: -1;
+ }
+ 
+ .btn:hover::before {
+  transform: translateX(0);
+ }
+
+ .btn:hover {
+  color: #0842e0;
+ }
+
+#main {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0842e0;
+  position: relative;
 }
 
-.btn:hover::before {
-  transform: translateX(0);
+/* container */
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+}
+
+.box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  z-index: 10;
+}
+
+.header .logo img {
+  width: 4rem;
+} 
+
+#menu {
+  position: fixed;
+  top: 2.3rem;
+  right: 4rem;
 }
 
 .button i {
@@ -112,23 +124,76 @@ body::selection {
 }
 
 .button i:hover {
-  border: 1px solid #ffffff;
+  border: 1px solid #e0e0e0;
 }
 
-/* menu Bar */
+.button button {
+  margin-right: 6rem;
+}
+
+#menuIcone {
+  position: fixed;
+  top: 1.5rem;
+  right: 4rem;
+}
+
+.button i.open {
+  color: white;
+  background-color: #0842e0;
+  border: none;
+}
+
+.button button.remove {
+  display: none;
+}
+
+.container .home {
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  padding: 6rem 7rem;
+  z-index: 8;
+}
+
+.home h1 {
+  font-size: 7rem;
+  font-weight: 300;
+  color: white;
+  line-height: 100px;
+}
+
+.home .home_text {
+  display: flex;
+  align-items: end;
+  gap: 3rem;
+}
+
+.home_text p {
+  font-size: 1rem;
+  width: 50%;
+  line-height: 30px;
+  padding-top: 2rem;
+}
+
+/* menu_bar */
 .menu_bar {
   width: 100%;
   height: 100vh;
-  background-color: #0842e096;
+  background-color: #0842e0c2;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 9;
   transition: all 0.4s ease-in-out;
   opacity: 0;
 }
 
 .menu_bar.showMenu {
-    opacity: 1;
+  opacity: 1;
 }
 
 .menu_bar .box {
@@ -214,50 +279,12 @@ body::selection {
   color: rgb(54, 53, 53);
 }
 
-/* home_pages */
-.home_pages {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-}
-
-.video {
+.section_two {
   width: 100%;
   height: 100vh;
 }
 
-.video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+body:has(.requires-no-scroll) {
+  overflow: hidden;
 }
 
-.texthome {
-  position: absolute;
-  top: 50%;
-  padding: 0 10rem;
-}
-
-.texthome h1 {
-  width: 70%;
-  font-size: 6.5rem;
-  font-weight: 300;
-  color: white;
-  line-height: 100px;
-}
-
-.texthome .text {
-  display: flex;
-  align-items: end;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.texthome .text p {
-  font-size: 1.3rem;
-  color: rgb(225, 224, 224);
-  width: 40%;
-}
-
-/* section_Two */
