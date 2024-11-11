@@ -28,8 +28,8 @@ body {
   src: url(/font/3.woff2);
 }
 
-/* From Uiverse.io by WhiteNervosa */ 
-/* From Uiverse.io by ernestnash */ 
+/* From Uiverse.io by WhiteNervosa */
+/* From Uiverse.io by ernestnash */
 .btn {
   display: inline-block;
   padding: 0.8rem 1.8rem;
@@ -45,9 +45,9 @@ body {
   z-index: 1;
   font-family: inherit;
   border-radius: 2rem;
- }
- 
- .btn::before {
+}
+
+.btn::before {
   content: "";
   position: absolute;
   left: 0;
@@ -56,19 +56,19 @@ body {
   height: 100%;
   background-color: white;
   transform: translateX(-100%);
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: -1;
- }
- 
- .btn:hover::before {
+}
+
+.btn:hover::before {
   transform: translateX(0);
- }
+}
 
- .btn:hover {
+.btn:hover {
   color: #0842e0;
- }
+}
 
- #main {
+#main {
   width: 100%;
   position: relative;
 }
@@ -107,7 +107,7 @@ body {
 
 .header .logo img {
   width: 4rem;
-} 
+}
 
 .button_icone i {
   font-size: 1rem;
@@ -273,7 +273,7 @@ body {
 }
 
 /* section_two  */
-.section_two{
+.section_two {
   width: 100%;
   height: 100vh;
   background-color: #0a3cce;
@@ -310,10 +310,10 @@ body {
 }
 
 /* section_fover */
-.section_fover{
+.section_fover {
   width: 100%;
   height: 100vh;
-  background-color: #0a3cce;
+  background-color: #0d36c5;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -324,7 +324,7 @@ body {
 }
 
 .section_fover p span {
-  color: #9c9c9cc6;
+  color: #b3b3b3c6;
 }
 
 .section_fover p {
@@ -339,8 +339,74 @@ body {
   text-transform: uppercase;
 }
 
+/* section_five */
 .section_five canvas {
   max-width: 100%;
   max-height: 100vh;
   object-fit: cover;
+}
+
+/* section sir */
+.section_sir {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0a3cce;
+  position: relative;
+}
+
+.section_sir canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+}
+
+.page7-cir {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  border: 0.1px solid #86868677;
+}
+
+.page7-cir-inner {
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.5px solid #dadadab3;
+}
+
+/* section seven */
+.section_seven {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section_seven video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.sev_text {
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+}
+
+.sev_text h2 {
+  font-size: 6rem;
+  font-weight: 350;
+  color: white;
 }

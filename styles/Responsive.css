@@ -17,7 +17,7 @@
 
   .menu_bar .boxMenu {
     width: 100%;
-    padding: 7rem  2rem;
+    padding: 7rem 2rem;
   }
 
   .boxMenu ul li {
@@ -28,6 +28,9 @@
     padding: 0 3rem;
   }
 
+  .section_fover {
+    padding: 0 3rem;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -49,11 +52,23 @@
     padding: 0 1rem;
   }
 
-  .section_two p {
+  .section_fover {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .section_fover p {
     font-size: 3rem;
     line-height: 60px;
   }
-  
+
+  .sev_text h2 {
+    font-size: 5rem;
+  }
+
+  .sev_text {
+    bottom: 5%;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -61,7 +76,7 @@
     justify-content: space-between;
     padding: 0 1.5rem;
   }
-  
+
   .container .home {
     padding: 6rem 1.5rem;
   }
@@ -70,7 +85,7 @@
     font-size: 2.5rem;
     line-height: 50px;
   }
-  
+
   .home .home_text {
     width: 100%;
     align-items: start;
@@ -89,8 +104,10 @@
   }
 
   .section_two h3 {
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .section_fover h3 {
     font-size: 0.8rem;
   }
 
@@ -99,4 +116,18 @@
     line-height: 40px;
   }
 
+  .section_fover p {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .section_five canvas {
+    max-width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+
+  .sev_text h2 {
+    font-size: 3.5rem;
+  }
 }
