@@ -15,16 +15,18 @@
     padding-top: 2rem;
   }
 
-  .menu_bar .box {
+  .menu_bar .boxMenu {
     width: 100%;
-    padding: 5rem  1.5rem;
+    padding: 7rem  2rem;
   }
 
-  .box ul li {
+  .boxMenu ul li {
     font-size: 3rem;
   }
-  
-  
+
+  .section_two {
+    padding: 0 3rem;
+  }
 
 }
 
@@ -41,6 +43,17 @@
   .header .btn {
     display: none;
   }
+
+  .section_two {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .section_two p {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  
 }
 
 @media screen and (max-width: 470px) {
@@ -73,6 +86,17 @@
     position: fixed;
     top: 1.5rem;
     right: 1.5rem;
+  }
+
+  .section_two h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .section_two p {
+    font-size: 2rem;
+    line-height: 40px;
   }
 
 }

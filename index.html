@@ -10,11 +10,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/Responsive.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+  />
   </head>
   <body>
 
-    <div id="main" class="requires-no-scroll">
-      <section class="container">
+    <div class="button_icone">
+      <i class="ri-menu-line" id="menuIcone"></i>
+    </div>
+
+    <section class="menu_bar">
+      <div class="boxMenu">
+      <ul>
+          <li>Product</li>
+          <li>Mission</li>
+          <li>Blog</li>
+          <li>Events</li>
+          <li>FAQ</li>
+          <li>Contact</li>
+      </ul>
+
+      <div class="social_media">
+          <button class="btn_hover">LinkedlIn</button>
+          <button class="btn_hover">lnstagram</button>
+          <button class="btn_hover">Telegram</button>
+          <button class="btn_hover">YouTube</button>
+      </div>
+  </div>
+    </section>
+
+    <div id="main">
+      <section data-scroll data-scroll-speed="-5" class="container">
         <div class="box">
           <video loop muted autoplay src="/images/video pages.mp4"></video>
 
@@ -25,31 +53,8 @@
 
             <div class="button">
               <button class="btn">Book a Demo</button>
-
-              <i class="ri-menu-line" id="menuIcone"></i>
             </div>
           </header>
-
-          
-           <section class="menu_bar">
-        <div class="box">
-            <ul>
-                <li>Product</li>
-                <li>Mission</li>
-                <li>Blog</li>
-                <li>Events</li>
-                <li>FAQ</li>
-                <li>Contact</li>
-            </ul>
-
-            <div class="social_media">
-                <button class="btn_hover">LinkedlIn</button>
-                <button class="btn_hover">lnstagram</button>
-                <button class="btn_hover">Telegram</button>
-                <button class="btn_hover">YouTube</button>
-            </div>
-        </div>
-          </section>
 
           <section class="home">
             <h1>Experience Real Estate Agility<h1>
@@ -63,10 +68,31 @@
         </div>
       </section>
 
-      <section class="section_two" ></section>
+      <section data-scroll data-scroll-speed="1" class="section_two">
+        <h3>Certify your building as a Digital Twin Token (DTT®)</h3>
+        <p>The Digital Twin Token is a unique digital asset backed by property data. Magma combines your building’s components and systems essential information into a DTT®.</p>
+      </section>
+
+      <section class="section_three">
+        <canvas></canvas>
+      </section>
+
+      <section  class="section_fover">
+        <h3>Certify your building as a Digital Twin Token (DTT®)</h3>
+        <p>The Digital Twin Token is a unique digital asset backed by property data. Magma combines your building’s components and systems essential information into a DTT®.</p>
+      </section>
+
+      <section class="section_five">
+        <canvas></canvas>
+      </section>
+
+     
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="javascript/script.js"></script>
   </body>
 </html>
