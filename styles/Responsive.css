@@ -31,6 +31,11 @@
   .section_fover {
     padding: 0 3rem;
   }
+
+  .section_eleven {
+   padding: 5rem 4rem;
+   flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -69,6 +74,15 @@
   .sev_text {
     bottom: 5%;
   }
+
+  .section_eleven .left h1 {
+    font-size: 4rem;
+  }
+
+  .section_eleven {
+    padding: 5rem 2rem;
+   }
+  
 }
 
 @media screen and (max-width: 470px) {
@@ -129,5 +143,14 @@
 
   .sev_text h2 {
     font-size: 3.5rem;
+  }
+
+  .section_eleven {
+    padding: 5rem 1.5rem;
+   }
+
+   .section_eleven .left h1 {
+    font-size: 3rem;
+    line-height: 50px;
   }
 }
