@@ -1,43 +1,93 @@
-.boxMenu ul li:nth-of-type(1) {
-    text-decoration: underline black;
-}
-
 .Product_Home {
-    width: 100%;
-    min-height: 100vh;
-    position: absolute;
-    top: 15rem;
-    padding: 0 8rem;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 15rem;
+  padding: 0 8rem;
 }
 
 .Product_Home h3 {
-    color: white;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 400;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .Product_Home p {
-    width: 90%;
-    color: white;
-    font-size: 4rem;
-    font-weight: 300;
-    padding-top: 1.5rem;
-    line-height: 80px;
+  width: 90%;
+  color: white;
+  font-size: 4rem;
+  font-weight: 300;
+  padding-top: 1.5rem;
+  line-height: 80px;
 }
 
 .Product_Home img {
-    width: 100%;
-    margin-top: 6rem;
-    border-radius: 20px;
+  width: 100%;
+  margin-top: 6rem;
+  border-radius: 20px;
 }
 
 .product_container {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    position: relative;
-    top: 60rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 60rem;
+  padding: 0 8rem;
 }
 
+.product_container h3 {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 350;
+  text-transform: uppercase;
+}
 
+.product_container p {
+  width: 70%;
+  font-size: 6rem;
+  color: white;
+  line-height: 100px;
+  font-weight: 300;
+  margin-top: 2rem;
+}
+
+.con_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.con_box .boxPro {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.boxPro .text h2 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+}
+
+.boxPro .text p {
+  font-size: 1.5rem;
+  line-height: 35px;
+  color: rgb(223, 223, 223);
+  margin-top: 1rem;
+}
+
+.boxPro .image img {
+  width: 35rem;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.098);
+}
+
+.adding {
+  width: 100%;
+  height: 70rem;
+}
