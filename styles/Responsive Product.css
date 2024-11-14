@@ -1,0 +1,33 @@
+@media screen and (max-width: 990px) {
+  .Product_Home {
+    padding: 0 4rem;
+  }
+
+  .Product_Home p {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Product_Home {
+    padding: 0 1rem;
+  }
+
+  .Product_Home p {
+    font-size: 2rem;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .Product_Home {
+    padding: 0 1rem;
+  }
+
+  .Product_Home p {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+}

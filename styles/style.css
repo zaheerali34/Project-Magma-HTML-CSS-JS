@@ -73,6 +73,20 @@ body {
   position: relative;
 }
 
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+
+li a:hover {
+  color: #0842e0;
+}
+
 /* container */
 .container {
   width: 100%;
